@@ -3,9 +3,12 @@
 ## 1. API DE VALIDACIÓ JS
 
 Crea un formulari que validi
- - Si la edat introduïda es superior a 18. 
- - Si el format es 01-01-2025
- - La validació s’ha de fer quan s’escrigui dins el formulari i quan s’enviï el formulari. 
+
+- Si la edat introduïda es superior a 18.
+
+- Si el format es 01-01-2025
+
+- La validació s’ha de fer quan s’escrigui dins el formulari i quan s’enviï el formulari. 
 
 ```html
 <?>
