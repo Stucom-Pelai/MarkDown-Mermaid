@@ -1,0 +1,183 @@
+[
+  {
+    "titulo": "Cuestionario de Datos del Usuario",
+    "preguntas": [
+      {
+        "id": "nombre",
+        "tipo": "text",
+        "pregunta": "¿Cuál es tu nombre?",
+        "respuesta": "",
+        "restricciones": {
+          "min": 3,
+          "max": 50
+        }
+      },
+      {
+        "id": "fecha_nacimiento",
+        "tipo": "text",
+        "pregunta": "¿Cuál es tu fecha de nacimiento?",
+        "respuesta": "",
+        "restricciones": {
+          "min": 1,
+          "max": 10
+        },
+        "validacion": {
+          "min_edad": 17
+        }
+      },
+      {
+        "id": "email",
+        "tipo": "text",
+        "pregunta": "¿Cuál es tu correo electrónico?",
+        "respuesta": "",
+        "restricciones": {
+          "min": 5,
+          "max": 100
+        },
+        "validacion": {
+          "formato": "email",
+          "dominio": "stucom.com"
+        }
+      },
+      {
+        "id": "sexo",
+        "tipo": "select",
+        "pregunta": "¿Cuál es tu sexo?",
+        "respuesta": "",
+        "opciones": ["Masculino", "Femenino", "Otro"]
+      },
+      {
+        "id": "preferencias",
+        "tipo": "check",
+        "pregunta": "¿Qué prefieres hacer en tu tiempo libre?",
+        "respuesta": "",
+        "opciones": ["Leer", "Deportes", "Viajar", "Cine"]
+      }
+    ]
+  },
+  {
+    "titulo": "Cuestionario de Evaluación Académica",
+    "preguntas": [
+      {
+        "id": "comentarios",
+        "tipo": "textarea",
+        "pregunta": "¿Qué mejorarías en el curso?",
+        "respuesta": "El contenido del curso está bien, pero sería útil más ejemplos prácticos.",
+        "restricciones": {
+          "min": 15,
+          "max": 250
+        }
+      },
+      {
+        "id": "satisfaccion",
+        "tipo": "select",
+        "pregunta": "¿Qué tan satisfecho estás con el contenido del curso?",
+        "respuesta": "4",
+        "opciones": ["1", "2", "3", "4", "5"]
+      },
+      {
+        "id": "asistencia",
+        "tipo": "check",
+        "pregunta": "¿Asististe a todas las clases?",
+        "respuesta": "no",
+        "opciones": ["sí", "no"]
+      },
+      {
+        "id": "horarios",
+        "tipo": "check",
+        "pregunta": "¿Cuáles horarios prefieres para las clases? (Selecciona hasta 2 opciones)",
+        "respuesta": [],
+        "opciones": [
+          "Lunes 9:00 AM - 11:00 AM",
+          "Martes 3:00 PM - 5:00 PM",
+          "Miércoles 10:00 AM - 12:00 PM",
+          "Jueves 1:00 PM - 3:00 PM",
+          "Viernes 4:00 PM - 6:00 PM"
+        ],
+        "validacion": {
+          "max_seleccionados": 2
+        }
+      }
+    ]
+  },
+  {
+    "titulo": "Encuesta de Preferencias en Tecnología",
+    "preguntas": [
+      {
+        "id": "comentarios",
+        "tipo": "textarea",
+        "pregunta": "¿Qué tecnología te gustaría aprender en el futuro?",
+        "respuesta": "Me gustaría aprender sobre inteligencia artificial y machine learning.",
+        "restricciones": {
+          "min": 20,
+          "max": 200
+        }
+      },
+      {
+        "id": "sistema_operativo",
+        "tipo": "select",
+        "pregunta": "¿Qué sistema operativo prefieres usar?",
+        "respuesta": "Linux",
+        "opciones": ["Windows", "Linux", "MacOS"]
+      },
+      {
+        "id": "productos",
+        "tipo": "check",
+        "pregunta": "¿Qué dispositivos usas regularmente? (Selecciona hasta 2 opciones)",
+        "respuesta": ["smartphone"],
+        "opciones": ["smartphone", "laptop", "tablet", "smartwatch"],
+        "validacion": {
+          "max_seleccionados": 2
+        }
+      },
+      {
+        "id": "tiempo",
+        "tipo": "select",
+        "pregunta": "¿Cuántas horas a la semana dedicas a aprender sobre tecnología?",
+        "respuesta": "5",
+        "opciones": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+      }
+    ]
+  },
+  {
+    "titulo": "Encuesta de Preferencias de Cine",
+    "preguntas": [
+      {
+        "id": "comentarios",
+        "tipo": "textarea",
+        "pregunta": "¿Qué género de películas prefieres?",
+        "respuesta": "Acción, ciencia ficción y comedia.",
+        "restricciones": {
+          "min": 10,
+          "max": 150
+        }
+      },
+      {
+        "id": "favorito",
+        "tipo": "select",
+        "pregunta": "¿Cuál es tu película favorita?",
+        "respuesta": "Inception",
+        "opciones": ["Inception", "The Matrix", "Avengers", "Titanic"]
+      },
+      {
+        "id": "vista",
+        "tipo": "check",
+        "pregunta": "¿Has visto alguna de las siguientes películas?",
+        "respuesta": "sí",
+        "opciones": ["Inception", "The Matrix", "Avengers", "Titanic"]
+      },
+      {
+        "id": "frecuencia",
+        "tipo": "select",
+        "pregunta": "¿Con qué frecuencia ves películas?",
+        "respuesta": "4",
+        "opciones": [
+          {
+            "grupo": "Opción 1-5 veces al mes",
+            "valores": ["1", "2", "3", "4", "5"]
+          }
+        ]
+      }
+    ]
+  }
+]
