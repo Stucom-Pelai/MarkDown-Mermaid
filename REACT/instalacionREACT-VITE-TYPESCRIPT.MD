@@ -1,8 +1,5 @@
-# REACT
 
-Aquí tienes un **protocolo paso a paso** para empezar a trabajar con **React** en **Visual Studio Code (VS Code)**:
-
----
+# Instalacion REACT-TYPSCRIPT+VITE
 
 ## **1. Instalar Node.js y npm**
 
@@ -162,6 +159,7 @@ Y en `App.css`:
 
 ## **8. Agregar Bootstrap o Tailwind (Opcional)**
 
+
 Si quieres usar estilos predefinidos:
 
 🔹 **Bootstrap:**
@@ -187,139 +185,35 @@ Configura `tailwind.config.js` y usa sus clases en los componentes.
 
 ---
 
-## **9. Crear Componentes**
-
-Los componentes en React son funciones que retornan JSX.
 
 
+### Pasos iniciales para crear el entorno:
 
+1. **Instalar NodeJS**: [NodeJS](https://nodejs.org/es/)
 
+2. **Actualizar Create React App**:  
 
+   ```bash
+   npm install react-scripts@latest
+   ```
 
-Aquí tienes un formulario de **Login** simple en la página principal de tu proyecto en **React con Vite**. 
+3. **Crear un proyecto con Create React App**:  
 
----
+   ```bash
+   npx create-react-app nombre_del_proyecto --template typescript
+   ```
 
-### **1️⃣ Reemplaza `App.jsx` con este código:**
-```jsx
-import { useState } from "react";
+4. **Iniciar un proyecto (situados dentro de la carpeta del proyecto)**:  
 
-export default function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+   ```bash
+   npm start -o
+   ```
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Email: ${email}\nPassword: ${password}`);
-  };
+5. **Encapsular un proyecto (situados dentro de la carpeta del proyecto)**:  
+   ```bash
+   npm run build
+   ```
 
-  return (
-    <div className="container">
-      <h2>Iniciar Sesión</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="input-group">
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="input-group">
-          <label>Contraseña:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-
-        <button type="submit">Entrar</button>
-      </form>
-    </div>
-  );
-}
-```
+- Modificamos `App.tsx` para agregar y eliminar contenido en la aplicación web.
 
 ---
-
-### **2️⃣ Crea `App.css` para los estilos**
-Si aún no tienes este archivo en `src/`, créalo y agrégale este CSS:
-
-```css
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.container {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-.input-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.input-group label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.input-group input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-```
-
----
-
-### **3️⃣ Importa `App.css` en `App.jsx`**
-Asegúrate de que `App.jsx` tenga esta línea al inicio:
-```jsx
-import "./App.css";
-```
-
----
-
-### **4️⃣ Ejecuta tu app**
-Si ya tienes el servidor en ejecución, debería actualizarse automáticamente. Si no, ejecuta:
-```sh
-npm run dev
-```
-
-¡Listo! Ahora tienes un **formulario de login** simple con React en tu página principal. 🚀🎉
