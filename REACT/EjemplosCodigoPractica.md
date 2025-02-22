@@ -2,7 +2,9 @@
 # Indice Ejemplos de código para la práctica
 
 [Componente para leer un json que cree el cuestionario](#componente-para-leer-un-json-que-cree-el-cuestionario)
+
 [Renderizar un elemento del cuestionario](#renderizar-un-elemento-del-cuestionario)
+
 [Guardar y Recuperar Respuestas desde `localStorage`](#guardar-y-recuperar-respuestas-desde-localstorage)
 
 ## Componente para leer un json que cree el cuestionario

@@ -20,9 +20,13 @@
 - [Multi-idioma](#multi-idioma)
 
 [Cuestionarios JSON](#cuestionarios-json)
+
 [Plan de trabajo](#plan-de-trabajo)
+
 [Roles](#roles)
+
 [Calendario-Diagrama de Gantt](#calendario-diagrama-de-gantt)
+
 [Evaluación](#evaluación))
 
 ## Descripción de la práctica
