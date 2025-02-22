@@ -1,7 +1,9 @@
 
-# Ejemplos de código para la práctica
+# Indice Ejemplos de código para la práctica
 
-Utiliza estos ejemplos en tu proyecto REACT para validar su validez
+[Componente para leer un json que cree el cuestionario](#componente-para-leer-un-json-que-cree-el-cuestionario)
+[Renderizar un elemento del cuestionario](#renderizar-un-elemento-del-cuestionario)
+[Guardar y Recuperar Respuestas desde `localStorage`](#guardar-y-recuperar-respuestas-desde-localstorage)
 
 ## Componente para leer un json que cree el cuestionario
 
@@ -165,7 +167,7 @@ export default CuestionarioComponent;
 2. Cambia la ruta de `fetch` para que apunte a la ubicación correcta de tu archivo JSON en el servidor.
 3. Usa el componente `CuestionarioComponent` dentro de tu aplicación React.
 
-### Renderizar un elemento del cuestionario
+## Renderizar un elemento del cuestionario
 
 Aquí tienes un ejemplo de cómo podrías **traspasar** un formulario definido en JSON a un componente **React** que sea **viable**. Tomando el objeto JSON que proporcionaste, te mostraré cómo implementarlo en un componente de React que renderice un campo **`select`** con las opciones.
 
@@ -267,7 +269,7 @@ export default CuestionarioComponent;
 
 ---
 
-## **Componente guardar y Recuperar Respuestas desde `localStorage`**
+## **Guardar y Recuperar Respuestas desde localStorage**
 
 El siguiente código muestra solo cómo manejar la **lectura** y **escritura** de las respuestas usando **`localStorage`**, y asume que el formulario ya existe en tu aplicación.
 

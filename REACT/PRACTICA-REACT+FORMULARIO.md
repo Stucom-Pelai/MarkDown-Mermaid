@@ -54,8 +54,6 @@
      - Validar las respuestas.
      - Pasar al siguiente formulario (sólo si es válido).
 
----
-
 Este escenario implica:
 
 - En el inicio debe existir una "página" de bienvenida.
@@ -102,9 +100,15 @@ Se realizará un diseño para la aplicación, este deberá incluir
 
 La aplicación deberá estar en español e inglés utilizando la libreria i18
 
+## Códigos ejemplo
+
+Encontrarás codigos ejemplo para el componente formulario y para localstorage en [Ejemplos Codigo](EjemplosCodigoPractica.md)
+
 ## Cuestionarios JSON
 
 Los cuestionario y sus validaciones estan definidas en [cuestionarios y validaciones](cuestionariosFuente.md)
+
+
 
 ## Plan de trabajo
 
